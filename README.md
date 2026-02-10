@@ -38,8 +38,7 @@ pip install torchmetrics accelerate
 Experiment-specific packages: 
 
 - For wind data experiments: ```mamba install -c conda-forge xarray netCDF4``` [for reading '.nc' data files]
-- For macaque reaching experiments (baselines): ```pip install cebra```, ```mamba install pot``` [used by MARBLE]
-- For results plots: ```mamba install -c conda-forge statannotations``` [will also install seaborn, statsmodels, etc.]
+- For macaque reaching experiments (baselines): ```pip install cebra```, ```mamba install pot``` [used by MARBLE]; ```mamba install -c conda-forge statannotations``` [for results plots; will also install seaborn, statsmodels, etc.]
 
 ---
 ## 2&nbsp;&nbsp;Datasets
