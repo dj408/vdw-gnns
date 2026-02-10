@@ -35,15 +35,11 @@ pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geo
 pip install torchmetrics accelerate
 ```
 
-For wind data experiments:
-```mamba install -c conda-forge xarray netCDF4``` [for reading '.nc' data files]
+Experiment-specific packages: 
 
-For macaque reaching experiments (baselines):
-```pip install cebra```
-```mamba install pot``` [used by MARBLE]
-
-For results plots:
-```mamba install -c conda-forge statannotations``` [will also install seaborn, statsmodels, etc.]
+- For wind data experiments: ```mamba install -c conda-forge xarray netCDF4``` [for reading '.nc' data files]
+- For macaque reaching experiments (baselines): ```pip install cebra```, ```mamba install pot``` [used by MARBLE]
+- For results plots: ```mamba install -c conda-forge statannotations``` [will also install seaborn, statsmodels, etc.]
 
 ---
 ## 2&nbsp;&nbsp;Datasets
@@ -101,7 +97,7 @@ Data files for these experiments can be accessed from the MARBLE (Gosztolai et a
 The `run_experiments.ipynb` notebook contains instructions and script call examples for running our experiments and aggregating results.
 
 ### SLURM scripts
-We also share our SLURM scheduler scripts, in `scripts/slurm/`. Note that these scripts assume a conda environment: be sure to modify their directory and CONDA_ENV variables, etc., appropriately to your cluster settings before running.
+We also share our SLURM scheduler scripts, in `scripts/slurm/`. These scripts allow for more efficient experiment runs by allocating jobs across multiple GPUs. Note that these scripts assume a conda environment: be sure to modify their directory and CONDA_ENV variables, etc., appropriately to your cluster settings before running.
 
 ---
 ## 4&nbsp;&nbsp;Note: experiment configuration precedence
