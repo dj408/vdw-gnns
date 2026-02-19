@@ -1,6 +1,6 @@
 # VDW-GNNs: Vector diffusion wavelets for geometric graph neural networks
 
-A PyTorch/PyTorch-Geometric framework for building (optionally) rotationally-equivariant graph neural networks that utilize diffusion wavelets for both scalar and vector node features. Paper available on arXiv: [https://arxiv.org/abs/2510.01022].
+A PyTorch/PyTorch-Geometric framework for building (optionally) rotationally-equivariant graph neural networks that utilize diffusion wavelets for both scalar and vector node features. Paper available at https://arxiv.org/abs/2510.01022
 
 ---
 ## 1&nbsp;&nbsp;Required packages
